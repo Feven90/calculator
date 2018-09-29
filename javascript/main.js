@@ -1,3 +1,8 @@
-import {calculate} from './components/calculator.js';
+import {initialDisplay} from './components/calculator.js';
+import buttonEvents from './helpers/buttonEvents.js';
 // calculate(4, 2, 'multiply');
-calculate(4,2, 'divide');
+const initializeApp = () => {
+    buttonEvents();
+    initialDisplay();
+}
+initializeApp();
